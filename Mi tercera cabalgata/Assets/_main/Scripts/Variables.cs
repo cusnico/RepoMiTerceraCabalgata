@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Rendering;
 
 public class Variables : MonoBehaviour
 {
@@ -22,8 +23,6 @@ public class Variables : MonoBehaviour
     void Start()
     {
         _cubo.material.color = Color.blue;
-        myName = _inputfield.text;
-        _saludo.text = "Hola " + myName;
         _boxCollider.isTrigger = false;
     }
 
@@ -31,6 +30,6 @@ public class Variables : MonoBehaviour
     void Update()
     {
         myName = _inputfield.text;
-        _saludo.text = "Hola " + myName;
+        _saludo.text = "Saludo " + myName;
     }
 }
