@@ -29,7 +29,7 @@ public class Variables : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        myName = _inputfield.text;
+        myName = _inputfield.text; 
         _saludo.text = "Saludo " + myName;
     }
 }
